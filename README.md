@@ -1,5 +1,13 @@
 # Manto de Palpites
 
+## Versão publicada
+
+O site está disponível em https://mantodepalpites.com.br/.
+
+A pasta [`sites/`](sites/README.md) contém o código da versão atualmente hospedada no Sites: interface responsiva, servidor TypeScript, banco Cloudflare D1, integração de resultados e atualização diária. Inclui o favicon MP e as competições recolhidas ao abrir a página. O projeto Java/Spring Boot original permanece na raiz para desenvolvimento no IntelliJ; as instruções abaixo se referem a ele.
+
+As alterações realizadas neste projeto devem ser acompanhadas de commit e envio ao GitHub após a validação. Publicar no Sites e enviar ao GitHub são etapas distintas. Chaves, dados de participantes e arquivos locais de desenvolvimento não fazem parte do repositório.
+
 Bolão informal do Flamengo, com servidor Java 21 / Spring Boot 3.5, interface responsiva em português e banco H2 persistente. Projeto independente de torcedores.
 
 ## Abrir no IntelliJ
@@ -44,4 +52,4 @@ O site se adapta por largura de tela: menu superior no computador e botão no ca
 
 ## Publicar depois
 
-O projeto está preparado para rodar localmente, sem publicação automática ou envio de commits ao GitHub. Para uso compartilhado, hospede o JAR em um serviço com Java 21, disco persistente para `data/`, HTTPS e a chave da API nas variáveis do servidor. Apenas abrir no IntelliJ não mantém o site disponível quando o computador está desligado. Para testar no celular na mesma rede, abra `http://IP-DO-COMPUTADOR:8080` e permita a porta apenas na rede privada conforme a configuração do Windows.
+Esta seção descreve alternativas de hospedagem da versão Java original. A versão pública atual usa o código em `sites/`. Para uso compartilhado, hospede o JAR em um serviço com Java 21, disco persistente para `data/`, HTTPS e a chave da API nas variáveis do servidor. Apenas abrir no IntelliJ não mantém o site disponível quando o computador está desligado. Para testar no celular na mesma rede, abra `http://IP-DO-COMPUTADOR:8080` e permita a porta apenas na rede privada conforme a configuração do Windows.

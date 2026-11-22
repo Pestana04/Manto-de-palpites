@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8b211e"><meta name="description" content="Seu palpite veste o Manto. Palpites, competições e ranking da torcida rubro-negra.">
+  <title>Manto de Palpites · A tradição entra em campo</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-mp-v1-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-mp-v1-16.png">
+  <link rel="shortcut icon" href="/favicon-mp-v1.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-mp-v1-180.png">
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navigation">☰</button>
+      <a class="brand" href="#ranking" aria-label="Manto de Palpites, início"><span class="crest">MP<span>1981</span></span><span>MANTO <i>de</i> PALPITES<small>A tradição entra em campo.</small></span></a>
+      <nav id="navigation" aria-label="Menu principal">
+        <a href="#competicoes" data-tab="competicoes">Competições</a>
+        <a href="#ranking" data-tab="ranking">Ranking</a>
+        <a href="#perfil" data-tab="perfil">Perfil</a>
+      </nav>
+      <a href="#perfil" id="header-person" class="header-person" aria-label="Meu perfil"><span class="avatar">MP</span></a>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"><p class="loading">Preparando a arquibancada…</p></main>
+  <footer><span>MANTO DE PALPITES</span><p>Feito para quem carrega o Flamengo no peito.<br>Projeto independente de torcedores. Sem vínculo oficial com o clube.</p><a href="#regras">Como pontuar</a></footer>
+  <dialog id="welcome" aria-labelledby="welcome-title">
+    <form id="welcome-form" class="welcome-form">
+      <span class="eyebrow">SEU LUGAR NA ARQUIBANCADA</span><h2 id="welcome-title">Todo palpite<br>tem um nome.</h2>
+      <p>Informe seu nome completo para entrar no ranking. Sem senha: este navegador guardará sua identificação.</p>
+      <label for="welcome-name">Nome completo</label><input id="welcome-name" name="name" autocomplete="name" minlength="5" maxlength="100" required placeholder="Como a torcida te conhece?">
+      <p class="fine">Seu nome e sua foto serão públicos no ranking. Ao limpar os dados do navegador ou trocar de dispositivo, você perde o acesso ao perfil.</p>
+      <p id="welcome-error" class="error" role="alert"></p><button class="button" type="submit">Entrar na torcida</button>
+    </form>
+  </dialog>
+  <dialog id="game-dialog" aria-labelledby="game-title"><div class="dialog-head"><span class="eyebrow">PONTUAÇÃO DA PARTIDA</span><button id="close-game" class="text-button" aria-label="Fechar detalhes">Fechar ×</button></div><div id="game-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
